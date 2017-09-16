@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3k3-vS-Zsw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="SBh-tT-LxZ">
+            <objects>
+                <viewController id="3k3-vS-Zsw" customClass="MainViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uml-hE-ug6"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ni-yZ-3fV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qGL-7U-7mH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3L-cC-4ww" userLabel="block">
+                                <rect key="frame" x="30" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eWG-TF-znj" userLabel="seekSlider">
+                                <rect key="frame" x="18" y="318.5" width="339" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FmS-UO-fSM"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="seekSliderValueChangedWithSlider:" destination="3k3-vS-Zsw" eventType="valueChanged" id="ZVI-r4-1Z9"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWG-TF-znj" firstAttribute="centerY" secondItem="qGL-7U-7mH" secondAttribute="centerY" id="PqU-ke-5V4"/>
+                            <constraint firstItem="eWG-TF-znj" firstAttribute="centerX" secondItem="qGL-7U-7mH" secondAttribute="centerX" id="bnZ-61-TAS"/>
+                            <constraint firstAttribute="trailing" secondItem="eWG-TF-znj" secondAttribute="trailing" constant="20" id="cO1-du-HIp"/>
+                            <constraint firstItem="eWG-TF-znj" firstAttribute="leading" secondItem="qGL-7U-7mH" secondAttribute="leading" constant="20" id="p6w-lU-JWf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="block" destination="O3L-cC-4ww" id="JgV-u3-a8X"/>
+                        <outlet property="seekSlider" destination="eWG-TF-znj" id="0gD-UM-gB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYK-hC-dEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="37"/>
+        </scene>
+    </scenes>
+</document>
