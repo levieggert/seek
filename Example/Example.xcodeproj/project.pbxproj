@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451B63051F9276C40072B8F4 /* Seek+UIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */; };
+		451B63071F92773E0072B8F4 /* SeekProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B63061F92773E0072B8F4 /* SeekProperties.swift */; };
 		457EFAF41F6DD3D7009FBF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFAE91F6DD3D7009FBF03 /* AppDelegate.swift */; };
 		457EFAF51F6DD3D7009FBF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457EFAEA1F6DD3D7009FBF03 /* Assets.xcassets */; };
 		457EFAF61F6DD3D7009FBF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457EFAEB1F6DD3D7009FBF03 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+UIAnimations.swift"; sourceTree = "<group>"; };
+		451B63061F92773E0072B8F4 /* SeekProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekProperties.swift; sourceTree = "<group>"; };
 		457EFAD31F6DD394009FBF03 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457EFAE91F6DD3D7009FBF03 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457EFAEA1F6DD3D7009FBF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				457EFAF21F6DD3D7009FBF03 /* Seek+Transforms.swift */,
+				451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */,
 				457EFAF31F6DD3D7009FBF03 /* Seek.swift */,
+				451B63061F92773E0072B8F4 /* SeekProperties.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451B63071F92773E0072B8F4 /* SeekProperties.swift in Sources */,
+				451B63051F9276C40072B8F4 /* Seek+UIAnimations.swift in Sources */,
 				457EFAFA1F6DD3D7009FBF03 /* Seek+Transforms.swift in Sources */,
 				457EFAF41F6DD3D7009FBF03 /* AppDelegate.swift in Sources */,
 				457EFAFB1F6DD3D7009FBF03 /* Seek.swift in Sources */,

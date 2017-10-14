@@ -22,12 +22,12 @@ class MainViewController: UIViewController
         
         self.seek.view = self.block
         self.seek.duration = 0.3
-        self.seek.params.fromAlpha = 0
-        self.seek.params.toAlpha = 1
-        self.seek.params.fromTransform = Seek.getTransform(x: 0, y: 0)
-        self.seek.params.toTransform = Seek.getTransform(x: 80, y: 80)
+        self.seek.properties.fromAlpha = 0
+        self.seek.properties.toAlpha = 1
+        self.seek.properties.fromTransform = Seek.getTransform(x: 0, y: 0)
+        self.seek.properties.toTransform = Seek.getTransform(x: 80, y: 80)
         
-        self.seek.toPosition(position: 0, animated: false)
+        self.seek.to(position: 0, animated: false)
         self.seekSlider.setValue(0, animated: false)
     }
     
@@ -40,7 +40,7 @@ class MainViewController: UIViewController
     {
         let position: CGFloat = CGFloat(slider.value)
         
-        self.seek.toPosition(position: position)
+        self.seek.to(position: position)
     }
 }
 
