@@ -11,6 +11,7 @@ Seek supports the follow start and end values.  Alpha, Transforms (scaling, tran
 An example of animating a UIView's alpha and translating it's frame would look like this.
 
 let seek: Seek = Seek()
+
 seek.view = myView
 seek.duration = 0.3
 seek.properties.fromAlpha = 0
