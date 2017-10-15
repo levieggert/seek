@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4500BBEA1F6DD11D00E42B55 /* Seek+Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */; };
 		4500BBEB1F6DD11D00E42B55 /* Seek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500BBE91F6DD11D00E42B55 /* Seek.swift */; };
+		4550F95A1F93C880008CB1D6 /* Seek+UIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */; };
+		4550F95B1F93C880008CB1D6 /* SeekProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550F9591F93C880008CB1D6 /* SeekProperties.swift */; };
 		45AC0FE11F6DCC560070E174 /* Seek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC0FD71F6DCC560070E174 /* Seek.framework */; };
 		45AC0FE61F6DCC560070E174 /* SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC0FE51F6DCC560070E174 /* SeekTests.swift */; };
 		45AC0FE81F6DCC560070E174 /* Seek.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC0FDA1F6DCC560070E174 /* Seek.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+Transforms.swift"; sourceTree = "<group>"; };
 		4500BBE91F6DD11D00E42B55 /* Seek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seek.swift; sourceTree = "<group>"; };
+		4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+UIAnimations.swift"; sourceTree = "<group>"; };
+		4550F9591F93C880008CB1D6 /* SeekProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekProperties.swift; sourceTree = "<group>"; };
 		45AC0FD71F6DCC560070E174 /* Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC0FDA1F6DCC560070E174 /* Seek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seek.h; sourceTree = "<group>"; };
 		45AC0FDB1F6DCC560070E174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,8 +61,10 @@
 		4500BBE71F6DD11D00E42B55 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4500BBE91F6DD11D00E42B55 /* Seek.swift */,
 				4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */,
+				4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */,
+				4500BBE91F6DD11D00E42B55 /* Seek.swift */,
+				4550F9591F93C880008CB1D6 /* SeekProperties.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -213,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4550F95B1F93C880008CB1D6 /* SeekProperties.swift in Sources */,
 				4500BBEA1F6DD11D00E42B55 /* Seek+Transforms.swift in Sources */,
+				4550F95A1F93C880008CB1D6 /* Seek+UIAnimations.swift in Sources */,
 				4500BBEB1F6DD11D00E42B55 /* Seek.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
