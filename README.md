@@ -1,14 +1,11 @@
 Seek
 ====
 
-Seek is a small animation class that animates UIViews across a timeline.  Animations are defined with start and end values and can be animated anywhere between these values.
+Seek makes it easy to animate UIView's and constraints based on percentage values.  Animations are defined with a from value and a to value and can then be animated to any position between those values by providing a float between 0 and 1.
 
-Seek supports the follow start and end values.  Alpha, Transforms (scaling, translating, rotating) and constraint constants. 
+Seek currently supports from and to values for alpha, transforms (translate, rotate, scale), and constraint constants.
 
-
-##### UIView Animation
-
-An example of animating a UIView's alpha and translating it's frame would look like this.
+In this example Seek will animate a view's alpha and translate the view.
 
 ```swift
 let seek: Seek = Seek()
@@ -23,4 +20,15 @@ seek.properties.toTransform = Seek.getTransform(x: 80, y: 80)
 seek.to(position: 1)
 ```
 
+You can also use Seek's class methods to animate views.
+
+```swift
+Seek.view(view: myView, duration: 0.3, properties: SeekProperties(fromAlpha: 0, toAlpha: 1))
+
+Seek.constraint(constraint: myConstraint, constraintLayoutView: layoutView, duration: 0.3, properties: SeekProperties(fromConstraintConstant: 0, toConstraintConstant: 50))
+```
+
+Use the SeekProperties class to define your from values and to values for a Seek animation.
+
+Use the Seek class to animate your UIView's and constraints.  Seek uses UIView.animation to run the animations.
 
