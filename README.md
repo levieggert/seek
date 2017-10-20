@@ -32,3 +32,8 @@ Use the SeekProperties class to define your from values and to values for a Seek
 
 Use the Seek class to animate your UIView's and constraints.  Seek uses UIView.animation to run the animations.
 
+## Requirements
+
+- iOS 8.0+
+- Xcode 8.3+
+- Swift 3+
