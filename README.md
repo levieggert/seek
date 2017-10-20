@@ -5,13 +5,13 @@ Seek makes it easy to animate UIView's and constraints based on percentage value
 
 Seek currently supports from and to values for alpha, transforms (translate, rotate, scale), and constraint constants.
 
-## Requirements
+### Requirements
 
 - iOS 8.0+
 - Xcode 8.3+
 - Swift 3+
 
-## How to use
+### How to use
 
 In this example Seek will animate a view's alpha and translate the view.
 
