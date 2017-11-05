@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.name         = "Seek"
-  s.version      = "1.1.0"
+  s.version      = "2.0.0"
   s.license      = "MIT"
   
   s.homepage     = "https://github.com/levieggert/Seek"

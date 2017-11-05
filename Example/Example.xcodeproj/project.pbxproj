@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		451B63051F9276C40072B8F4 /* Seek+UIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */; };
-		451B63071F92773E0072B8F4 /* SeekProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B63061F92773E0072B8F4 /* SeekProperties.swift */; };
+		4510AC791FAF80C2006E97A8 /* Seek+Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510AC751FAF80C2006E97A8 /* Seek+Transforms.swift */; };
+		4510AC7A1FAF80C2006E97A8 /* Seek+UIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510AC761FAF80C2006E97A8 /* Seek+UIAnimations.swift */; };
+		4510AC7B1FAF80C2006E97A8 /* Seek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510AC771FAF80C2006E97A8 /* Seek.swift */; };
+		4510AC7C1FAF80C2006E97A8 /* SeekProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510AC781FAF80C2006E97A8 /* SeekProperties.swift */; };
 		457EFAF41F6DD3D7009FBF03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFAE91F6DD3D7009FBF03 /* AppDelegate.swift */; };
 		457EFAF51F6DD3D7009FBF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457EFAEA1F6DD3D7009FBF03 /* Assets.xcassets */; };
 		457EFAF61F6DD3D7009FBF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457EFAEB1F6DD3D7009FBF03 /* LaunchScreen.storyboard */; };
 		457EFAF71F6DD3D7009FBF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457EFAED1F6DD3D7009FBF03 /* Main.storyboard */; };
-		457EFAFA1F6DD3D7009FBF03 /* Seek+Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFAF21F6DD3D7009FBF03 /* Seek+Transforms.swift */; };
-		457EFAFB1F6DD3D7009FBF03 /* Seek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EFAF31F6DD3D7009FBF03 /* Seek.swift */; };
 		45EB07371F6DD63E004D5864 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB07361F6DD63E004D5864 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+UIAnimations.swift"; sourceTree = "<group>"; };
-		451B63061F92773E0072B8F4 /* SeekProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekProperties.swift; sourceTree = "<group>"; };
+		4510AC751FAF80C2006E97A8 /* Seek+Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+Transforms.swift"; sourceTree = "<group>"; };
+		4510AC761FAF80C2006E97A8 /* Seek+UIAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+UIAnimations.swift"; sourceTree = "<group>"; };
+		4510AC771FAF80C2006E97A8 /* Seek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seek.swift; sourceTree = "<group>"; };
+		4510AC781FAF80C2006E97A8 /* SeekProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekProperties.swift; sourceTree = "<group>"; };
 		457EFAD31F6DD394009FBF03 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457EFAE91F6DD3D7009FBF03 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457EFAEA1F6DD3D7009FBF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457EFAEC1F6DD3D7009FBF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457EFAEE1F6DD3D7009FBF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		457EFAEF1F6DD3D7009FBF03 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		457EFAF21F6DD3D7009FBF03 /* Seek+Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+Transforms.swift"; sourceTree = "<group>"; };
-		457EFAF31F6DD3D7009FBF03 /* Seek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seek.swift; sourceTree = "<group>"; };
 		45EB07361F6DD63E004D5864 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,11 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4510AC741FAF80C2006E97A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4510AC751FAF80C2006E97A8 /* Seek+Transforms.swift */,
+				4510AC761FAF80C2006E97A8 /* Seek+UIAnimations.swift */,
+				4510AC771FAF80C2006E97A8 /* Seek.swift */,
+				4510AC781FAF80C2006E97A8 /* SeekProperties.swift */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
 		457EFACA1F6DD394009FBF03 = {
 			isa = PBXGroup;
 			children = (
 				457EFAE81F6DD3D7009FBF03 /* Resources */,
-				457EFAF11F6DD3D7009FBF03 /* Source */,
+				4510AC741FAF80C2006E97A8 /* Source */,
 				457EFAD41F6DD394009FBF03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,17 +83,6 @@
 				45EB07361F6DD63E004D5864 /* MainViewController.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		457EFAF11F6DD3D7009FBF03 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				457EFAF21F6DD3D7009FBF03 /* Seek+Transforms.swift */,
-				451B63041F9276C40072B8F4 /* Seek+UIAnimations.swift */,
-				457EFAF31F6DD3D7009FBF03 /* Seek.swift */,
-				451B63061F92773E0072B8F4 /* SeekProperties.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,12 +112,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = levi;
 				TargetAttributes = {
 					457EFAD21F6DD394009FBF03 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Q74FGM83LR;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -157,12 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451B63071F92773E0072B8F4 /* SeekProperties.swift in Sources */,
-				451B63051F9276C40072B8F4 /* Seek+UIAnimations.swift in Sources */,
-				457EFAFA1F6DD3D7009FBF03 /* Seek+Transforms.swift in Sources */,
+				4510AC7C1FAF80C2006E97A8 /* SeekProperties.swift in Sources */,
 				457EFAF41F6DD3D7009FBF03 /* AppDelegate.swift in Sources */,
-				457EFAFB1F6DD3D7009FBF03 /* Seek.swift in Sources */,
 				45EB07371F6DD63E004D5864 /* MainViewController.swift in Sources */,
+				4510AC7A1FAF80C2006E97A8 /* Seek+UIAnimations.swift in Sources */,
+				4510AC7B1FAF80C2006E97A8 /* Seek.swift in Sources */,
+				4510AC791FAF80C2006E97A8 /* Seek+Transforms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +200,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -206,7 +210,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -248,7 +256,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -256,7 +266,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -290,7 +304,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.levi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -303,7 +318,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.levi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
