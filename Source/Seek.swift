@@ -13,7 +13,12 @@ public class Seek
     
     public var duration: TimeInterval = 1
     public var properties: SeekProperties = SeekProperties()
+    
+    public required init()
+    {
         
+    }
+    
     public static func view(view: UIView, duration: TimeInterval, properties: SeekProperties, complete:((_ finished: Bool) -> Void)? = nil) -> Seek
     {
         let seek: Seek = Seek()
