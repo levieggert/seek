@@ -7,7 +7,7 @@ import UIKit
 
 extension Seek
 {
-    // MARK: Helpers
+    // MARK: - Helpers
     
     public static func clampPosition(position: CGFloat) -> CGFloat
     {
@@ -28,7 +28,7 @@ extension Seek
         return fromValue + (position * (toValue - fromValue))
     }
     
-    // MARK: Transforms
+    // MARK: - Transforms
     
     public static func addTransform(transformA: CGAffineTransform, toTransformB: CGAffineTransform) -> CGAffineTransform
     {

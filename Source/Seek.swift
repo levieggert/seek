@@ -7,17 +7,23 @@ import UIKit
 
 public class Seek
 {
+    // MARK: - Properties
+    
     public weak var view: UIView?
     public weak var constraintLayoutView: UIView?
     public weak var constraint: NSLayoutConstraint?
     
     public var duration: TimeInterval = 1
+    public var delay: TimeInterval = 0
+    public var ease: UIViewAnimationOptions = .curveEaseOut
     public var properties: SeekProperties = SeekProperties()
     
     public required init()
     {
         
     }
+    
+    // MARK: - Seek
     
     public static func view(view: UIView, duration: TimeInterval, properties: SeekProperties, complete:((_ finished: Bool) -> Void)? = nil) -> Seek
     {
@@ -50,26 +56,33 @@ public class Seek
     
     public func to(position: CGFloat, complete:((_ finished: Bool) -> Void)? = nil)
     {
-        self.to(position: position, duration: self.duration, properties: self.properties, complete: complete)
+        self.to(position: position, duration: self.duration, delay: self.delay, ease: self.ease, complete: complete)
     }
     
     public func to(position: CGFloat, animated: Bool, complete:((_ finished: Bool) -> Void)? = nil)
     {
         let duration: TimeInterval = animated ? self.duration : 0
         
-        self.to(position: position, duration: duration, properties: self.properties, complete: complete)
+        self.to(position: position, duration: duration, delay: self.delay, ease: self.ease, complete: complete)
     }
     
     public func to(position: CGFloat, duration: TimeInterval, complete:((_ finished: Bool) -> Void)? = nil)
     {
-        self.to(position: position, duration: duration, properties: self.properties, complete: complete)
+        self.to(position: position, duration: duration, delay: self.delay, ease: self.ease, complete: complete)
     }
     
-    public func to(position: CGFloat, duration: TimeInterval, properties: SeekProperties, complete:((_ finished: Bool) -> Void)? = nil)
+    public func to(position: CGFloat, delay: TimeInterval, complete:((_ finished: Bool) -> Void)? = nil)
     {
-        let delay: TimeInterval = properties.delay
-        let ease: UIViewAnimationOptions = properties.ease
-        
+        self.to(position: position, duration: self.duration, delay: delay, ease: self.ease, complete: complete)
+    }
+    
+    public func to(position: CGFloat, duration: TimeInterval, delay: TimeInterval, complete:((_ finished: Bool) -> Void)? = nil)
+    {        
+        self.to(position: position, duration: duration, delay: delay, ease: self.ease, complete: complete)
+    }
+    
+    public func to(position: CGFloat, duration: TimeInterval, delay: TimeInterval, ease: UIViewAnimationOptions, complete:((_ finished: Bool) -> Void)? = nil)
+    {
         if (duration > 0 || delay > 0)
         {
             UIView.animate(withDuration: duration, delay: delay, options: ease, animations: { () -> Void in

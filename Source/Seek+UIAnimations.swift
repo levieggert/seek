@@ -7,7 +7,7 @@ import UIKit
 
 extension Seek
 {
-    // MARK: ImageView Animations
+    // MARK: - ImageView Animations
     
     public static func animateImageView(imageView: UIImageView, image: UIImage?, duration: TimeInterval, toAlpha: CGFloat = 1, complete:((_ finished: Bool) -> Void)? = nil)
     {
@@ -68,7 +68,7 @@ extension Seek
         }
     }
     
-    // MARK: Button Animations
+    // MARK: - Button Animations
     
     public static func animateButtonImage(button: UIButton, image: UIImage?, duration: TimeInterval, complete:((_ finished: Bool) -> Void)? = nil)
     {
@@ -129,7 +129,7 @@ extension Seek
         }
     }
     
-    // MARK: Label Animations
+    // MARK: - Label Animations
     
     public static func transitionLabel(label: UILabel, text: String?, duration: TimeInterval, transition: UIViewAnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
     {
