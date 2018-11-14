@@ -8,8 +8,8 @@ Seek currently supports from and to values for alpha, transforms (translate, rot
 ### Requirements
 
 - iOS 8.0+
-- Xcode 9.0+
-- Swift 4+
+- Xcode 10.0
+- Swift 4.2
 
 ### Cocoapods
 
@@ -19,7 +19,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Seek', '3.0.0'
+    pod 'Seek', '3.1.0'
 end
 ```
 

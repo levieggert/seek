@@ -15,7 +15,7 @@ public class Seek
     
     public var duration: TimeInterval = 1
     public var delay: TimeInterval = 0
-    public var ease: UIViewAnimationOptions = .curveEaseOut
+    public var ease: UIView.AnimationOptions = .curveEaseOut
     public var properties: SeekProperties = SeekProperties()
     
     public required init()
@@ -81,7 +81,7 @@ public class Seek
         self.to(position: position, duration: duration, delay: delay, ease: self.ease, complete: complete)
     }
     
-    public func to(position: CGFloat, duration: TimeInterval, delay: TimeInterval, ease: UIViewAnimationOptions, complete:((_ finished: Bool) -> Void)? = nil)
+    public func to(position: CGFloat, duration: TimeInterval, delay: TimeInterval, ease: UIView.AnimationOptions, complete:((_ finished: Bool) -> Void)? = nil)
     {
         if (duration > 0 || delay > 0)
         {

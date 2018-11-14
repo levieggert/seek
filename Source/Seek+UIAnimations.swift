@@ -41,7 +41,7 @@ extension Seek
         }
     }
     
-    public static func transitionImageView(imageView: UIImageView, image: UIImage?, duration: TimeInterval, transition: UIViewAnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
+    public static func transitionImageView(imageView: UIImageView, image: UIImage?, duration: TimeInterval, transition: UIView.AnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
     {
         if (duration > 0)
         {
@@ -102,7 +102,7 @@ extension Seek
         }
     }
     
-    public static func transitionButton(button: UIButton, image: UIImage?, duration: TimeInterval, transition: UIViewAnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
+    public static func transitionButton(button: UIButton, image: UIImage?, duration: TimeInterval, transition: UIView.AnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
     {
         if (duration > 0)
         {
@@ -131,7 +131,7 @@ extension Seek
     
     // MARK: - Label Animations
     
-    public static func transitionLabel(label: UILabel, text: String?, duration: TimeInterval, transition: UIViewAnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
+    public static func transitionLabel(label: UILabel, text: String?, duration: TimeInterval, transition: UIView.AnimationOptions = .transitionCrossDissolve, complete:((_ finished: Bool) -> Void)? = nil)
     {
         if (duration > 0)
         {
