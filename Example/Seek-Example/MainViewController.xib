@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Example" customModuleProvider="target">
+            <connections>
+                <outlet property="redBlock" destination="Abs-D5-TAR" id="yhZ-2Y-KeG"/>
+                <outlet property="seekSlider" destination="HmN-Vq-XqN" id="JeF-IJ-nUW"/>
+                <outlet property="tealBlock" destination="tZY-nR-vV3" id="8p6-Yh-9Mg"/>
+                <outlet property="tealBlockLeading" destination="dEG-Qr-tPv" id="9T8-ZD-PXk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WMh-xI-VYk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-D5-TAR" userLabel="redBlock">
+                    <rect key="frame" x="30" y="100" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.0" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZY-nR-vV3" userLabel="tealBlock">
+                    <rect key="frame" x="0.0" y="294" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3ko-5K-EH9"/>
+                        <constraint firstAttribute="width" constant="50" id="iB8-kX-1bz"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HmN-Vq-XqN" userLabel="seekSlider">
+                    <rect key="frame" x="28" y="752" width="358" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ik0-sn-Tvi"/>
+                    </constraints>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTJ-lJ-Rck" userLabel="slideMeLabel">
+                    <rect key="frame" x="30" y="812" width="354" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="UTJ-lJ-Rck" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="6Iw-Xy-krJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UTJ-lJ-Rck" secondAttribute="trailing" constant="30" id="I5s-X1-9UX"/>
+                <constraint firstItem="tZY-nR-vV3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="250" id="cof-pB-ngS"/>
+                <constraint firstItem="tZY-nR-vV3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dEG-Qr-tPv"/>
+                <constraint firstItem="HmN-Vq-XqN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="gcN-kL-gsr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UTJ-lJ-Rck" secondAttribute="bottom" constant="30" id="gza-TK-ZLg"/>
+                <constraint firstItem="UTJ-lJ-Rck" firstAttribute="top" secondItem="HmN-Vq-XqN" secondAttribute="bottom" constant="30" id="rTN-c5-7oA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HmN-Vq-XqN" secondAttribute="trailing" constant="30" id="ttZ-qq-miY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

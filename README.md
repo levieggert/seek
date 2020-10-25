@@ -7,47 +7,58 @@ Seek currently supports from and to values for alpha, transforms (translate, rot
 
 ### Requirements
 
-- iOS 8.0+
-- Xcode 10.0
-- Swift 4.2
+- iOS 11.0+
+- Xcode 11.0
+- Swift 5.0
 
 ### Cocoapods
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'Seek', '3.1.0'
+    pod 'Seek', '4.0.0'
 end
 ```
 
 ### How to use
 
-In this example Seek will animate a view's alpha and translate the view.
+To animate a view using Seek instantiate a Seek instance and provide the view and properties you want to animate.
+
+In this example Seek will animate a view's alpha and translate, scale, and rotate the view.
 
 ```swift
-let seek: Seek = Seek()
-
-seek.view = myView
-seek.duration = 0.3
-seek.properties.fromAlpha = 0
-seek.properties.toAlpha = 1
-seek.properties.fromTransform = Seek.getTransform(x: 0, y: 0)
-seek.properties.toTransform = Seek.getTransform(x: 80, y: 80)
-
-seek.to(position: 1)
+let seek = Seek(
+    view: myViewToAnimate,
+    seekProperties: [
+        .alpha(seekFloat: SeekFloat(
+            fromValue: 0.5, 
+            toValue: 1
+        )),
+        .transform(seekTransform: SeekTransform(
+            fromValue: SeekTransform.getTransform(x: 0, y: 0, scaleX: 1, scaleY: 1, rotationDegrees: 0), 
+            toValue: SeekTransform.getTransform(x: 100, y: 100, scaleX: 1.4, scaleY: 1.4, rotationDegrees: 30)
+        ))
+])
 ```
 
-You can also use Seek's class methods to animate views.
+You can also create a Seek to animate constraints.
 
-```swift
-Seek.view(view: myView, duration: 0.3, properties: SeekProperties(fromAlpha: 0, toAlpha: 1))
-
-Seek.constraint(constraint: myConstraint, constraintLayoutView: layoutView, duration: 0.3, properties: SeekProperties(fromConstraintConstant: 0, toConstraintConstant: 50))
 ```
-
-Use the SeekProperties class to define your from values and to values for a Seek animation.
-
-Use the Seek class to animate your UIView's and constraints.  Seek uses UIView.animation to run the animations.
+let seek = Seek(
+    view: myViewToAnimate,
+    constraint: myViewConstraintToAnimate,
+    constraintLayoutView: viewToCallLayoutIfNeededOn,
+    seekProperties: [
+        .constraints(seekFloat: SeekFloat(
+            fromValue: 0, 
+            toValue: view.bounds.size.width - tealBlock.frame.size.width
+        )), 
+        .transform(seekTransform: SeekTransform(
+            fromValue: SeekTransform.getTransform(x: 0, y: 0, scaleX: 1, scaleY: 1, rotationDegrees: 0), 
+            toValue: SeekTransform.getTransform(x: 0, y: 0, scaleX: 2, scaleY: 2, rotationDegrees: 50)
+        ))
+])
+```

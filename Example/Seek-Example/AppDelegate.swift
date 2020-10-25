@@ -1,9 +1,6 @@
 //
-//  AppDelegate.swift
-//  Example
-//
-//  Created by Levi Eggert on 9/16/17.
-//  Copyright © 2017 levi. All rights reserved.
+//  Created by Levi Eggert.
+//  Copyright © 2020 Levi Eggert. All rights reserved.
 //
 
 import UIKit
@@ -13,8 +10,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = UIColor.white
+        window.rootViewController = MainViewController(nibName: String(describing: MainViewController.self), bundle: nil)
+        window.makeKeyAndVisible()
+        self.window = window
+        
         // Override point for customization after application launch.
         return true
     }
@@ -40,7 +43,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
