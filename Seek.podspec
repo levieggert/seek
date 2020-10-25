@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/levieggert/Seek.git", :tag => "#{s.version}" }
 
   s.source_files = 'Source/*.swift'
+  s.swift_version = '5.0'
 end
