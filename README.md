@@ -42,6 +42,14 @@ let seek = Seek(
             toValue: SeekTransform.getTransform(x: 100, y: 100, scaleX: 1.4, scaleY: 1.4, rotationDegrees: 30)
         ))
 ])
+
+seek.animateTo(
+    position: 1,
+    duration: 1,
+    delay: 0,
+    animationOptions: .curveEaseOut,
+    complete: nil
+)
 ```
 
 You can also create a Seek to animate constraints.
@@ -61,4 +69,12 @@ let seek = Seek(
             toValue: SeekTransform.getTransform(x: 0, y: 0, scaleX: 2, scaleY: 2, rotationDegrees: 50)
         ))
 ])
+
+seek.animateTo(
+    position: 1,
+    duration: 1,
+    delay: 0,
+    animationOptions: .curveEaseOut,
+    complete: nil
+)
 ```
