@@ -46,7 +46,7 @@ let seek = Seek(
 
 You can also create a Seek to animate constraints.
 
-```
+```swift
 let seek = Seek(
     view: myViewToAnimate,
     constraint: myViewConstraintToAnimate,
