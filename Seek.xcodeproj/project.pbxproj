@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4500BBEA1F6DD11D00E42B55 /* Seek+Transforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */; };
 		4500BBEB1F6DD11D00E42B55 /* Seek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4500BBE91F6DD11D00E42B55 /* Seek.swift */; };
-		4550F95A1F93C880008CB1D6 /* Seek+UIAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */; };
-		4550F95B1F93C880008CB1D6 /* SeekProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4550F9591F93C880008CB1D6 /* SeekProperties.swift */; };
+		457BE8312546190600D4F46E /* SeekType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BE82C2546190600D4F46E /* SeekType.swift */; };
+		457BE8322546190600D4F46E /* SeekFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BE82D2546190600D4F46E /* SeekFloat.swift */; };
+		457BE8332546190600D4F46E /* SeekPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BE82E2546190600D4F46E /* SeekPosition.swift */; };
+		457BE8342546190600D4F46E /* SeekPropertyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BE82F2546190600D4F46E /* SeekPropertyType.swift */; };
+		457BE8352546190600D4F46E /* SeekTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457BE8302546190600D4F46E /* SeekTransform.swift */; };
 		45AC0FE11F6DCC560070E174 /* Seek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AC0FD71F6DCC560070E174 /* Seek.framework */; };
 		45AC0FE61F6DCC560070E174 /* SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC0FE51F6DCC560070E174 /* SeekTests.swift */; };
 		45AC0FE81F6DCC560070E174 /* Seek.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC0FDA1F6DCC560070E174 /* Seek.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,10 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+Transforms.swift"; sourceTree = "<group>"; };
 		4500BBE91F6DD11D00E42B55 /* Seek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seek.swift; sourceTree = "<group>"; };
-		4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Seek+UIAnimations.swift"; sourceTree = "<group>"; };
-		4550F9591F93C880008CB1D6 /* SeekProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekProperties.swift; sourceTree = "<group>"; };
+		457BE82C2546190600D4F46E /* SeekType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekType.swift; sourceTree = "<group>"; };
+		457BE82D2546190600D4F46E /* SeekFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekFloat.swift; sourceTree = "<group>"; };
+		457BE82E2546190600D4F46E /* SeekPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekPosition.swift; sourceTree = "<group>"; };
+		457BE82F2546190600D4F46E /* SeekPropertyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekPropertyType.swift; sourceTree = "<group>"; };
+		457BE8302546190600D4F46E /* SeekTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekTransform.swift; sourceTree = "<group>"; };
 		45AC0FD71F6DCC560070E174 /* Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AC0FDA1F6DCC560070E174 /* Seek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Seek.h; sourceTree = "<group>"; };
 		45AC0FDB1F6DCC560070E174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,10 +65,12 @@
 		4500BBE71F6DD11D00E42B55 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4500BBE81F6DD11D00E42B55 /* Seek+Transforms.swift */,
-				4550F9581F93C880008CB1D6 /* Seek+UIAnimations.swift */,
 				4500BBE91F6DD11D00E42B55 /* Seek.swift */,
-				4550F9591F93C880008CB1D6 /* SeekProperties.swift */,
+				457BE82D2546190600D4F46E /* SeekFloat.swift */,
+				457BE82E2546190600D4F46E /* SeekPosition.swift */,
+				457BE82F2546190600D4F46E /* SeekPropertyType.swift */,
+				457BE8302546190600D4F46E /* SeekTransform.swift */,
+				457BE82C2546190600D4F46E /* SeekType.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -185,6 +191,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 45AC0FCD1F6DCC550070E174;
@@ -220,10 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4550F95B1F93C880008CB1D6 /* SeekProperties.swift in Sources */,
-				4500BBEA1F6DD11D00E42B55 /* Seek+Transforms.swift in Sources */,
-				4550F95A1F93C880008CB1D6 /* Seek+UIAnimations.swift in Sources */,
+				457BE8342546190600D4F46E /* SeekPropertyType.swift in Sources */,
+				457BE8322546190600D4F46E /* SeekFloat.swift in Sources */,
+				457BE8352546190600D4F46E /* SeekTransform.swift in Sources */,
 				4500BBEB1F6DD11D00E42B55 /* Seek.swift in Sources */,
+				457BE8332546190600D4F46E /* SeekPosition.swift in Sources */,
+				457BE8312546190600D4F46E /* SeekType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +384,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Seek/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.levi.Seek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -397,7 +408,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Seek/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 4.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.levi.Seek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
